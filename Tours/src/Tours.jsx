@@ -12,8 +12,13 @@ const Tours = () => {
   if (tourCard.length === 0) {
     return (
       <div className="text-center">
-        <h2>No Tours Left</h2>
-        <button onClick={() => setTourCard(data)}>Refresh</button>
+        <h2 className="text-2xl">No Tours Left</h2>
+        <button
+          className=" bg-[rgb(16,185,129)] text-white py-2 mt-2 px-4 rounded"
+          onClick={() => setTourCard(data)}
+        >
+          Refresh
+        </button>
       </div>
     );
   }
